@@ -173,34 +173,37 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ul>
-<li><p>private 变量用method调用</p>
-</li>
-<li><p>this变量</p>
-</li>
-<li><p>始终指向当前的instance*，防止重名:这个实例里的字段 this.field<br>class Person {<br>   private String name;</p>
-<p>   public void setName(String name) {</p>
-<pre><code>this.name = name; // 前面的this不可少，少了就变成局部变量name了</code></pre><p>   }<br>}</p>
-</li>
-<li><p>可变参数<br>格式：类型…，可变参数相当于数组类型</p>
-</li>
+<li>private 变量用method调用</li>
+<li>this变量</li>
+<li>始终指向当前的instance*，防止重名:这个实例里的字段 this.field<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Person &#123;</span><br><span class="line">    private String name;</span><br><span class="line"></span><br><span class="line">    public void setName(String name) &#123;</span><br><span class="line">        this.name &#x3D; name; &#x2F;&#x2F; 前面的this不可少，少了就变成局部变量name了</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>可变参数<br>格式：类型…，可变参数相当于数组类型<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Group &#123;</span><br><span class="line">    private String[] names;</span><br><span class="line"></span><br><span class="line">    public void setNames(String... names) &#123;</span><br><span class="line">        this.names &#x3D; names;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">Group g &#x3D; new Group();</span><br><span class="line">g.setNames(&quot;Xiao Ming&quot;, &quot;Xiao Hong&quot;, &quot;Xiao Jun&quot;); &#x2F;&#x2F; 传入3个String</span><br><span class="line">g.setNames(&quot;Xiao Ming&quot;, &quot;Xiao Hong&quot;); &#x2F;&#x2F; 传入2个String</span><br><span class="line">g.setNames(&quot;Xiao Ming&quot;); &#x2F;&#x2F; 传入1个String</span><br><span class="line">g.setNames(); &#x2F;&#x2F; 传入0个String</span><br></pre></td></tr></table></figure>
+可以把可变参数换成数组类型<br>等效的写法：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class Group &#123;</span><br><span class="line">    private String[] names;</span><br><span class="line"></span><br><span class="line">    public void setNames(String[] names) &#123;</span><br><span class="line">        this.names &#x3D; names;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">Group g &#x3D; new Group();</span><br><span class="line">g.setNames(new String[] &#123;&quot;Xiao Ming&quot;, &quot;Xiao Hong&quot;, &quot;Xiao Jun&quot;&#125;); &#x2F;&#x2F; 传入1个String[]</span><br></pre></td></tr></table></figure>
+可变参数的好处：</li>
 </ul>
-<p>class Group {<br>    private String[] names;</p>
-<pre><code>public void setNames(String... names) {
-    this.names = names;
-}</code></pre><p>}<br>Group g = new Group();<br>g.setNames(“Xiao Ming”, “Xiao Hong”, “Xiao Jun”); // 传入3个String<br>g.setNames(“Xiao Ming”, “Xiao Hong”); // 传入2个String<br>g.setNames(“Xiao Ming”); // 传入1个String<br>g.setNames(); // 传入0个String</p>
-<p>可以把可变参数换成数组类型<br>等效的写法：</p>
-<p>class Group {<br>    private String[] names;</p>
-<pre><code>public void setNames(String[] names) {
-    this.names = names;
-}</code></pre><p>}<br>Group g = new Group();<br>g.setNames(new String[] {“Xiao Ming”, “Xiao Hong”, “Xiao Jun”}); // 传入1个String[]</p>
-<p>可变参数的好处：</p>
 <ol>
 <li>不用定义 数组</li>
 <li>不可以传入null</li>
 </ol>
 <ul>
-<li>参数绑定<br>引用类型参数的传递，调用方的变量，和接收方的参数变量，指向的是同一个对象。双方任意一方对这个对象的修改，都会影响对方（因为指向同一个对象嘛）。<br><a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1260452774408320" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1252599548343744/1260452774408320</a><h2 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h2></li>
+<li>参数绑定<br>引用类型参数的传递，调用方的变量，和接收方的参数变量，指向的是同一个对象。双方任意一方对这个对象的修改，都会影响对方（因为指向同一个对象嘛）。<br><a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1260452774408320" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1252599548343744/1260452774408320</a><br>给实例传入一个字符串数组，改变字符串数组，会改变实例的值。引用到字符串数组==&gt;改变字符串数组的内部引用==&gt; 实例的引用不变 所以实例的field跟着改变。</li>
 </ul>
+<p>给实例传入一个字符串，改变字符串的值，不会改变实例的值。实例的field和局部字符串指向了不同的字符串地址。</p>
+<h2 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h2><p>相对于先创造一个空实例，再往里面添加field，<br>Person ming = new Person();<br>ming.setName(“小明”);<br>ming.setAge(12);</p>
+<p>可以首先在类里写好<em>构造方法</em>，然后直接传入参数生成实例。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Person &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    private int age;</span><br><span class="line"></span><br><span class="line">    public Person(String name, int age) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return this.name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public int getAge() &#123;</span><br><span class="line">        return this.age;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>构造函数方法名 就是类名</li>
+<li>没有返回值 </li>
+<li>调用构造方法，只能用new操作符</li>
+<li>可以存在多个构造函数。比如带参数的和不带参数的. 在通过new操作符调用的时候，编译器通过构造方法的参数数量、位置和类型自动区分：</li>
+<li>没有构造方法时，默认为null和0</li>
+<li>一个构造方法可以调用其他构造方法，这样做的目的是便于<em>代码复用</em>。调用其他构造方法的语法是this(…)：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Person &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    private int age;</span><br><span class="line"></span><br><span class="line">    public Person(String name, int age) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Person(String name) &#123;</span><br><span class="line">        this(name, 18); &#x2F;&#x2F; 调用另一个构造方法Person(String, int)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Person() &#123;</span><br><span class="line">        this(&quot;Unnamed&quot;); &#x2F;&#x2F; 调用另一个构造方法Person(String)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="方法重载-Overload"><a href="#方法重载-Overload" class="headerlink" title="方法重载 Overload"></a>方法<em>重载</em> Overload</h2>如果有一系列方法，它们的功能都是类似的，只有参数有所不同，那么，可以把这一组方法名做成<em>同名</em>方法。<br>名字一样，参数不同，功能不同的方法：重载<br>方法重载的返回值类型通常都是相同的。<br>方法重载的目的是，功能类似的方法使用同一名字，更容易记住，因此，调用起来更简单。<br>举个例子，String类提供了多个重载方法indexOf()，可以查找子串：</li>
+</ol>
+<p>int indexOf(int ch)：根据字符的Unicode码查找；</p>
+<p>int indexOf(String str)：根据字符串查找；</p>
+<p>int indexOf(int ch, int fromIndex)：根据字符查找，但指定起始位置；</p>
+<p>int indexOf(String str, int fromIndex)根据字符串查找，但指定起始位置。</p>
 
       
 
