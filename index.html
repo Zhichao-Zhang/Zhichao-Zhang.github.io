@@ -159,7 +159,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/13/my-first-post/">my first post</a>
+      <a class="article-title" href="/2020/05/13/my-first-post/">Java 基础学习</a>
     </h1>
   
 
@@ -172,10 +172,42 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h2><p>content</p>
-<h2 id="Chapter-2"><a href="#Chapter-2" class="headerlink" title="Chapter 2"></a>Chapter 2</h2><p>content</p>
-<hr>
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref."></a>Ref.</h2>
+        <h2 id="变量和数据类型"><a href="#变量和数据类型" class="headerlink" title="变量和数据类型"></a>变量和数据类型</h2><h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><p>定义：cpu直接定义运算</p>
+<ul>
+<li>整数:byte, int, short, long</li>
+<li>浮点数: float, double</li>
+<li>字符: char</li>
+<li>布尔: boolean<br>特殊例子：</li>
+</ul>
+<ol>
+<li>整型</li>
+</ol>
+<ul>
+<li>下划线<br>int i3 = 2_000_000_000; // 加下划线更容易识别</li>
+<li>进制表示<br>int i4 = 0xff0000; // 十六进制表示的16711680<br>int i5 = 0b1000000000; // 二进制表示的512</li>
+<li>Long的 L结尾<br>long l = 9000000000000000000L; // long型的结尾需要加L</li>
+</ul>
+<ol start="2">
+<li>浮点型</li>
+</ol>
+<ul>
+<li>浮点型的f<br>float f2 = 3.14e38f; // 科学计数法表示的3.14x10^38</li>
+<li>浮点型的d不用加<br>double d2 = -1.79e308;</li>
+<li>上限<br>浮点数可表示的范围非常大，float类型可最大表示3.4e38，而double类型可最大表示1.79e308。</li>
+</ul>
+<ol start="3">
+<li>char</li>
+</ol>
+<ul>
+<li>注意char类型使用单引号’，且仅有一个字符，要和双引号”的字符串类型区分开。</li>
+</ul>
+<h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><p>除了上面的基本类型，都是引用类型。 如String。</p>
+<h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><p>在变量前面加入 final 关键词，变量为常量。值不可更改。<br>final double PI = 3.14; // PI是一个常量</p>
+<h3 id="var关键字"><a href="#var关键字" class="headerlink" title="var关键字"></a>var关键字</h3><p><em>类型名</em>太长，用var代替。<br>StringBuilder sb = new StringBuilder();<br>var sb = new StringBuilder();<br>等同于<br>StringBuilder sb = new StringBuilder();<br>省打一个类型名。</p>
+<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域{}"></a>作用域{}</h3><p>{<br>    …<br>    int i = 0; // 变量i从这里开始定义<br>    …<br>    {<br>        …<br>        int x = 1; // 变量x从这里开始定义<br>        …<br>        {<br>            …<br>            String s = “hello”; // 变量s从这里开始定义<br>            …<br>        } // 变量s作用域到此结束<br>        …<br>        // 注意，这是一个新的变量s，它和上面的变量同名，<br>        // 但是因为作用域不同，它们是两个不同的变量:<br>        String s = “hi”;<br>        …<br>    } // 变量x和s作用域到此结束<br>    …<br>} // 变量i作用域到此结束</p>
+<h2 id="Chapter-2"><a href="#Chapter-2" class="headerlink" title="Chapter 2"></a>Chapter 2</h2><hr>
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref."></a>Ref.</h2><p><a href="https://www.liaoxuefeng.com/wiki/" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/</a></p>
+
       
 
       
