@@ -152,6 +152,143 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-javascript-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/13/javascript-1/">JavaScript Note</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/13/javascript-1/" class="archive-article-date">
+  	<time datetime="2020-07-13T23:32:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Basic-Data-structure"><a href="#Basic-Data-structure" class="headerlink" title="Basic Data structure"></a>Basic Data structure</h2><hr>
+<h3 id="Compound-Assignment"><a href="#Compound-Assignment" class="headerlink" title="Compound Assignment"></a>Compound Assignment</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a &#x3D; a + 6  &#x3D;&gt; a +&#x3D; 6</span><br><span class="line">a &#x3D; a * 5  &#x3D;&gt; a *&#x3D; 5</span><br><span class="line"></span><br><span class="line">a &#x3D; a &#x2F; 12  &#x3D;&gt; a&#x2F;&#x3D; 12</span><br></pre></td></tr></table></figure>
+<p>和python一样，加减乘除都有</p>
+<h3 id="Declare-String-Variables"><a href="#Declare-String-Variables" class="headerlink" title="Declare String Variables"></a>Declare String Variables</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var firstName &#x3D; &quot;Alan&quot; ; &#x2F;&#x2F; This is how to create string</span><br></pre></td></tr></table></figure>
+<h3 id="Escaping-Literal-Quotes-in-String"><a href="#Escaping-Literal-Quotes-in-String" class="headerlink" title="Escaping Literal Quotes in String"></a>Escaping Literal Quotes in String</h3><p>(转义字符防止quotes)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var myStr &#x3D; &quot;He said: \&quot;lalala\&quot; &quot; &#x2F;&#x2F;This is quotes Escaping</span><br></pre></td></tr></table></figure>
+<h3 id="Quoting-Strings-with-SIngle-Quotes"><a href="#Quoting-Strings-with-SIngle-Quotes" class="headerlink" title="Quoting Strings with SIngle Quotes"></a>Quoting Strings with SIngle Quotes</h3><p>太多Quotes，有没有办法一次代替：<br>用单引号’ …..”This is okay “…’ 里面的双引号可以看到<br>用 `` 也同理，`……`</p>
+<h3 id="Escape-Sequences-in-Strings"><a href="#Escape-Sequences-in-Strings" class="headerlink" title="Escape Sequences in Strings"></a>Escape Sequences in Strings</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\n newline, \r carriage return, \t tab, \backspace, \f form feed</span><br></pre></td></tr></table></figure>
+<h3 id="Concate-string-using-plus-character"><a href="#Concate-string-using-plus-character" class="headerlink" title="Concate string using plus character"></a>Concate string using plus character</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var ourStr &#x3D; &quot;this is &quot; + &quot;the start&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Concate-string-using-plus-Equal-character"><a href="#Concate-string-using-plus-Equal-character" class="headerlink" title="Concate string using plus Equal character"></a>Concate string using plus Equal character</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ourStr +&#x3D; &quot;We comes later&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Find-length-of-a-string"><a href="#Find-length-of-a-string" class="headerlink" title="Find length of a string"></a>Find length of a string</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FirstLength &#x3D; First.length</span><br></pre></td></tr></table></figure>
+
+<h3 id="Bracket-Notation-to-find-first-character-in-String"><a href="#Bracket-Notation-to-find-first-character-in-String" class="headerlink" title="Bracket[] Notation to find first character in String"></a>Bracket[] Notation to find first character in String</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var example &#x3D; &#39;1234&#39;</span><br><span class="line">var firstLetter &#x3D; example[0]</span><br></pre></td></tr></table></figure>
+
+<h3 id="String-Immutability"><a href="#String-Immutability" class="headerlink" title="String Immutability"></a>String Immutability</h3><p>String are immutable! The individual letter could not be changed:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myStr[0] &#x3D; &quot;H&quot; &#x2F;&#x2F; WRONG</span><br></pre></td></tr></table></figure>
+
+<h3 id="Bracket-Notation-to-find-last-character-in-String"><a href="#Bracket-Notation-to-find-last-character-in-String" class="headerlink" title="Bracket [] Notation to find last character in String"></a>Bracket [] Notation to find last character in String</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var lastLetter &#x3D; myStr[myStr.length - 1]</span><br><span class="line">var ThirdToLastLetter &#x3D; myStr[myStr.length - 3]</span><br></pre></td></tr></table></figure>
+
+<h3 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [&quot;John&quot;, 23]</span><br><span class="line">var myArray &#x3D; []</span><br></pre></td></tr></table></figure>
+
+<h3 id="Nested-Array"><a href="#Nested-Array" class="headerlink" title="Nested Array"></a>Nested Array</h3><p> Array in another array</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var Array &#x3D;  [[&quot;Bulls&quot;, 23],[ &quot;ssd&quot;]]</span><br></pre></td></tr></table></figure>
+<h3 id="Index-access-of-Array"><a href="#Index-access-of-Array" class="headerlink" title="Index access of Array"></a>Index access of Array</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line">var ourData &#x3D; ourArray[2] &#x2F;&#x2F;equal 3</span><br></pre></td></tr></table></figure>
+
+<h3 id="Modify-Array-through-Index-mutable"><a href="#Modify-Array-through-Index-mutable" class="headerlink" title="Modify Array through Index (mutable)"></a>Modify Array through Index (mutable)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line">ourArray[1] &#x3D; 4 &#x2F;&#x2F; [1,4,3]</span><br></pre></td></tr></table></figure>
+
+<h3 id="Access-Multi-dimensional-Array"><a href="#Access-Multi-dimensional-Array" class="headerlink" title="Access Multi-dimensional Array"></a>Access Multi-dimensional Array</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var ourArray [[1,2],[3,4],[5,6]]</span><br><span class="line"></span><br><span class="line">var myData &#x3D; myArray[0][0]</span><br></pre></td></tr></table></figure>
+
+<h3 id="push-array"><a href="#push-array" class="headerlink" title="push() array"></a>push() array</h3><p>就是python的append()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line"></span><br><span class="line">ourArray.push([4,5]) &#x2F;&#x2F; [1,2,3,4,5]</span><br></pre></td></tr></table></figure>
+
+<h3 id="pop-array"><a href="#pop-array" class="headerlink" title="pop() array"></a>pop() array</h3><p>删除最后一个item，弹出</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line"></span><br><span class="line">ourArray.pop() &#x2F;&#x2F; [1,2] remove thelast item</span><br><span class="line">var myData &#x3D; ourArray.pop()  &#x2F;&#x2F; [1], myData &#x3D; 2; assign to variable</span><br></pre></td></tr></table></figure>
+<h3 id="shift-array"><a href="#shift-array" class="headerlink" title="shift() array"></a>shift() array</h3><p>删除第一个item</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line"></span><br><span class="line">ourArray.shift() &#x2F;&#x2F; [2,3] remove the first item</span><br><span class="line"></span><br><span class="line">var myData &#x3D; ourArray.shift()</span><br></pre></td></tr></table></figure>
+
+<h3 id="unshift-array"><a href="#unshift-array" class="headerlink" title="unshift() array"></a>unshift() array</h3><p>添加一个item在index 0</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line"></span><br><span class="line">ourArray.unshift(0) &#x2F;&#x2F; [0,1, 2,3] remove the first item</span><br><span class="line"></span><br><span class="line">ourArray.unshift([1,2])</span><br></pre></td></tr></table></figure>
+
+<h3 id="GLOBAL-variable"><a href="#GLOBAL-variable" class="headerlink" title="GLOBAL variable"></a>GLOBAL variable</h3><p>在函数之外定义的变量。</p>
+<h3 id="Local-scope"><a href="#Local-scope" class="headerlink" title="Local scope"></a>Local scope</h3><p>在函数体内定义的变量</p>
+<h3 id="Global-vs-Local-Scope-in-function"><a href="#Global-vs-Local-Scope-in-function" class="headerlink" title="Global vs Local Scope in function"></a>Global vs Local Scope in function</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var outerWear &#x3D; &quot;T-shirt&quot;</span><br><span class="line"></span><br><span class="line">function myOutfit()&#123;</span><br><span class="line">    var outerWear &#x3D; &quot;sweater&quot;</span><br><span class="line">    return outerWear;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(myOutfit()) &#x2F;&#x2F; sweater</span><br><span class="line">console.log(outerWear) &#x2F;&#x2F; T-shirt</span><br></pre></td></tr></table></figure>
+
+<h3 id="Undefined-value-return-from-a-function"><a href="#Undefined-value-return-from-a-function" class="headerlink" title="Undefined value return from a function"></a>Undefined value return from a function</h3><p>如果没有return，就return undefined</p>
+<h3 id="Stand-in-line"><a href="#Stand-in-line" class="headerlink" title="Stand in line"></a>Stand in line</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function nextInLine(arr, item)&#123;</span><br><span class="line">    arr.push(item);</span><br><span class="line">    item &#x3D; arr.shift();</span><br><span class="line">    return item;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var testArr &#x3D; [1,2,3,4,5]</span><br><span class="line">console.log(&quot;Before: &quot; +JSON.stringify(testArr))</span><br><span class="line">console.log(nextInLine(testArr, 6))</span><br><span class="line">console.log(&quot;After: &quot; +JSON.stringify(testArr))</span><br></pre></td></tr></table></figure>
+
+<h3 id="Boolean-Value"><a href="#Boolean-Value" class="headerlink" title="Boolean Value"></a>Boolean Value</h3><p>true/ false</p>
+<h3 id="Equal-condition"><a href="#Equal-condition" class="headerlink" title="Equal condition"></a>Equal condition</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10 &#x3D;&#x3D; &#39;10&#39; &#x2F;&#x2F;True! Convert to string</span><br><span class="line">10 &#x3D;&#x3D;&#x3D; &#39;10&#39; &#x2F;&#x2F;False! Check type also</span><br></pre></td></tr></table></figure>
+
+<h3 id="Not-Equal"><a href="#Not-Equal" class="headerlink" title="Not Equal"></a>Not Equal</h3><p>!= </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10 !&#x3D; &#39;10&#39; ? &#x2F;&#x2F;False</span><br></pre></td></tr></table></figure>
+<h3 id="Strict-inequal-operater"><a href="#Strict-inequal-operater" class="headerlink" title="Strict inequal operater"></a>Strict inequal operater</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10 !&#x3D;&#x3D; &#39;10&#39; ? &#x2F;&#x2F;True</span><br></pre></td></tr></table></figure>
+<h3 id="switch-statement"><a href="#switch-statement" class="headerlink" title="switch statement"></a>switch statement</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">switch(val)&#123;</span><br><span class="line">    case 1: </span><br><span class="line">        console.log(&quot;1&quot;);</span><br><span class="line">        break;</span><br><span class="line"></span><br><span class="line">    case 2:</span><br><span class="line">        console.log(&quot;2&quot;);</span><br><span class="line">        break;</span><br><span class="line">    case 3:</span><br><span class="line">    case 4:</span><br><span class="line">    case 5:</span><br><span class="line">        console.log(&quot;公用 3， 4 ，5 &quot;)</span><br><span class="line">    default:</span><br><span class="line">        console.log(&quot;This is default)</span><br><span class="line">        break;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h2><h3 id="Build-JavaScript-object"><a href="#Build-JavaScript-object" class="headerlink" title="Build JavaScript object"></a>Build JavaScript object</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var ourDog &#x3D; &#123;</span><br><span class="line">    &quot;name&quot;: &quot;Camper&quot;,</span><br><span class="line">    &quot;leg&quot;:4,</span><br><span class="line">    &quot;tail&quot;: 1,</span><br><span class="line">    &quot;friend&quot;:[&quot;Bill&quot;,&quot;daf&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Accessing-object-properties"><a href="#Accessing-object-properties" class="headerlink" title="Accessing object properties"></a>Accessing object properties</h3><ol>
+<li><p>with dot notation</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var ourDog &#x3D; &#123;</span><br><span class="line">    &quot;name&quot;: &quot;Camper&quot;,</span><br><span class="line">    &quot;leg&quot;:4,</span><br><span class="line">    &quot;tail&quot;: 1,</span><br><span class="line">    &quot;friend&quot;:[&quot;Bill&quot;,&quot;daf&quot;]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var Name &#x3D; ourDog.name;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Bracket Notation<br>property name有空格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">var ourDog &#x3D; &#123;</span><br><span class="line">    &quot;name&quot;: &quot;Camper&quot;,</span><br><span class="line">    &quot;leg length&quot;:4,</span><br><span class="line">    &quot;tail&quot;: 1,</span><br><span class="line">    &quot;friend&quot;:[&quot;Bill&quot;,&quot;daf&quot;]</span><br><span class="line">&#125;</span><br><span class="line">var leg &#x3D; ourDog[&quot;leg length&quot;];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Update object property&#x2F;</span><br><span class="line">ourDog[&quot;leg length&quot;] &#x3D; &quot;10&quot;</span><br><span class="line">ourDog.name &#x3D; &quot;Jenny&quot;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Adding new property</span><br><span class="line">ourDog.gender &#x3D; &quot;Boy&quot;</span><br><span class="line">ourDog[&quot;bake&quot;] &#x3D; &quot;wooof&quot;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Delete property</span><br><span class="line">delete ourDog.bark</span><br><span class="line">delete ourDog[&quot;tail&quot;]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="check-property"><a href="#check-property" class="headerlink" title="check property"></a>check property</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ourDog.hasOwnProperty(checkProp)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Access-nested-object"><a href="#Access-nested-object" class="headerlink" title="Access nested object"></a>Access nested object</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var ourDog &#x3D; &#123;</span><br><span class="line">    &quot;name&quot;: &quot;Camper&quot;,</span><br><span class="line">    &quot;leg length&quot;:4,</span><br><span class="line">    &quot;tail&quot;: 1,</span><br><span class="line">    &quot;friend&quot;:[&quot;Bill&quot;,&quot;daf&quot;],</span><br><span class="line">    &quot;list&quot;:[1,2,3]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var AccessNested &#x3D; ourDog.list[2]</span><br></pre></td></tr></table></figure>
+
+<h3 id="Copy-object"><a href="#Copy-object" class="headerlink" title="Copy object"></a>Copy object</h3><p>这样copy不影响原来的值 hard copy</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var collectionCopy &#x3D; JSON.parse(JSON.stringify(collection))</span><br><span class="line">&#x2F;&#x2F;collection is an object to be copied</span><br></pre></td></tr></table></figure>
+
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/13/javascript-1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-blue-green-deployment" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -865,124 +1002,6 @@ d</li>
 
 
   
-    <article id="post-javascript-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/13/javascript-1/">JavaScript</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/13/javascript-1/" class="archive-article-date">
-  	<time datetime="2020-05-13T23:32:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Compound-Assignment"><a href="#Compound-Assignment" class="headerlink" title="Compound Assignment"></a>Compound Assignment</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a &#x3D; a + 6  &#x3D;&gt; a +&#x3D; 6</span><br><span class="line">a &#x3D; a * 5  &#x3D;&gt; a *&#x3D; 5</span><br><span class="line"></span><br><span class="line">a &#x3D; a &#x2F; 12  &#x3D;&gt; a&#x2F;&#x3D; 12</span><br></pre></td></tr></table></figure>
-<p>和python一样，加减乘除都有</p>
-<h2 id="Declare-String-Variables"><a href="#Declare-String-Variables" class="headerlink" title="Declare String Variables"></a>Declare String Variables</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var firstName &#x3D; &quot;Alan&quot; ; &#x2F;&#x2F; This is how to create string</span><br></pre></td></tr></table></figure>
-<h2 id="Escaping-Literal-Quotes-in-String"><a href="#Escaping-Literal-Quotes-in-String" class="headerlink" title="Escaping Literal Quotes in String"></a>Escaping Literal Quotes in String</h2><p>(转义字符防止quotes)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var myStr &#x3D; &quot;He said: \&quot;lalala\&quot; &quot; &#x2F;&#x2F;This is quotes Escaping</span><br></pre></td></tr></table></figure>
-<h2 id="Quoting-Strings-with-SIngle-Quotes"><a href="#Quoting-Strings-with-SIngle-Quotes" class="headerlink" title="Quoting Strings with SIngle Quotes"></a>Quoting Strings with SIngle Quotes</h2><p>太多Quotes，有没有办法一次代替：<br>用单引号’ …..”This is okay “…’ 里面的双引号可以看到<br>用 `` 也同理，`……`</p>
-<h2 id="Escape-Sequences-in-Strings"><a href="#Escape-Sequences-in-Strings" class="headerlink" title="Escape Sequences in Strings"></a>Escape Sequences in Strings</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\n newline, \r carriage return, \t tab, \backspace, \f form feed</span><br></pre></td></tr></table></figure>
-<h2 id="Concate-string-using-plus-character"><a href="#Concate-string-using-plus-character" class="headerlink" title="Concate string using plus character"></a>Concate string using plus character</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var ourStr &#x3D; &quot;this is &quot; + &quot;the start&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Concate-string-using-plus-Equal-character"><a href="#Concate-string-using-plus-Equal-character" class="headerlink" title="Concate string using plus Equal character"></a>Concate string using plus Equal character</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ourStr +&#x3D; &quot;We comes later&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Find-length-of-a-string"><a href="#Find-length-of-a-string" class="headerlink" title="Find length of a string"></a>Find length of a string</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FirstLength &#x3D; First.length</span><br></pre></td></tr></table></figure>
-
-<h2 id="Bracket-Notation-to-find-first-character-in-String"><a href="#Bracket-Notation-to-find-first-character-in-String" class="headerlink" title="Bracket[] Notation to find first character in String"></a>Bracket[] Notation to find first character in String</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var example &#x3D; &#39;1234&#39;</span><br><span class="line">var firstLetter &#x3D; example[0]</span><br></pre></td></tr></table></figure>
-
-<h2 id="String-Immutability"><a href="#String-Immutability" class="headerlink" title="String Immutability"></a>String Immutability</h2><p>String are immutable! The individual letter could not be changed:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myStr[0] &#x3D; &quot;H&quot; &#x2F;&#x2F; WRONG</span><br></pre></td></tr></table></figure>
-
-<h2 id="Bracket-Notation-to-find-last-character-in-String"><a href="#Bracket-Notation-to-find-last-character-in-String" class="headerlink" title="Bracket [] Notation to find last character in String"></a>Bracket [] Notation to find last character in String</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var lastLetter &#x3D; myStr[myStr.length - 1]</span><br><span class="line">var ThirdToLastLetter &#x3D; myStr[myStr.length - 3]</span><br></pre></td></tr></table></figure>
-
-<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [&quot;John&quot;, 23]</span><br><span class="line">var myArray &#x3D; []</span><br></pre></td></tr></table></figure>
-
-<h2 id="Nested-Array"><a href="#Nested-Array" class="headerlink" title="Nested Array"></a>Nested Array</h2><p> Array in another array</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var Array &#x3D;  [[&quot;Bulls&quot;, 23],[ &quot;ssd&quot;]]</span><br></pre></td></tr></table></figure>
-<h2 id="Index-access-of-Array"><a href="#Index-access-of-Array" class="headerlink" title="Index access of Array"></a>Index access of Array</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line">var ourData &#x3D; ourArray[2] &#x2F;&#x2F;equal 3</span><br></pre></td></tr></table></figure>
-
-<h2 id="Modify-Array-through-Index-mutable"><a href="#Modify-Array-through-Index-mutable" class="headerlink" title="Modify Array through Index (mutable)"></a>Modify Array through Index (mutable)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line">ourArray[1] &#x3D; 4 &#x2F;&#x2F; [1,4,3]</span><br></pre></td></tr></table></figure>
-
-<h2 id="Access-Multi-dimensional-Array"><a href="#Access-Multi-dimensional-Array" class="headerlink" title="Access Multi-dimensional Array"></a>Access Multi-dimensional Array</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var ourArray [[1,2],[3,4],[5,6]]</span><br><span class="line"></span><br><span class="line">var myData &#x3D; myArray[0][0]</span><br></pre></td></tr></table></figure>
-
-<h2 id="push-array"><a href="#push-array" class="headerlink" title="push() array"></a>push() array</h2><p>就是python的append()</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line"></span><br><span class="line">ourArray.push([4,5]) &#x2F;&#x2F; [1,2,3,4,5]</span><br></pre></td></tr></table></figure>
-
-<h2 id="pop-array"><a href="#pop-array" class="headerlink" title="pop() array"></a>pop() array</h2><p>删除最后一个item，弹出</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line"></span><br><span class="line">ourArray.pop() &#x2F;&#x2F; [1,2] remove thelast item</span><br><span class="line">var myData &#x3D; ourArray.pop()  &#x2F;&#x2F; [1], myData &#x3D; 2; assign to variable</span><br></pre></td></tr></table></figure>
-<h2 id="shift-array"><a href="#shift-array" class="headerlink" title="shift() array"></a>shift() array</h2><p>删除第一个item</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line"></span><br><span class="line">ourArray.shift() &#x2F;&#x2F; [2,3] remove the first item</span><br><span class="line"></span><br><span class="line">var myData &#x3D; ourArray.shift()</span><br></pre></td></tr></table></figure>
-
-<h2 id="unshift-array"><a href="#unshift-array" class="headerlink" title="unshift() array"></a>unshift() array</h2><p>添加一个item在index 0</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var ourArray &#x3D; [1,2,3]</span><br><span class="line"></span><br><span class="line">ourArray.unshift(0) &#x2F;&#x2F; [0,1, 2,3] remove the first item</span><br><span class="line"></span><br><span class="line">ourArray.unshift([1,2])</span><br></pre></td></tr></table></figure>
-
-<h2 id="GLOBAL-variable"><a href="#GLOBAL-variable" class="headerlink" title="GLOBAL variable"></a>GLOBAL variable</h2><p>在函数之外定义的变量。</p>
-<h2 id="Local-scope"><a href="#Local-scope" class="headerlink" title="Local scope"></a>Local scope</h2><p>在函数体内定义的变量</p>
-<h2 id="Global-vs-Local-Scope-in-function"><a href="#Global-vs-Local-Scope-in-function" class="headerlink" title="Global vs Local Scope in function"></a>Global vs Local Scope in function</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var outerWear &#x3D; &quot;T-shirt&quot;</span><br><span class="line"></span><br><span class="line">function myOutfit()&#123;</span><br><span class="line">    var outerWear &#x3D; &quot;sweater&quot;</span><br><span class="line">    return outerWear;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(myOutfit()) &#x2F;&#x2F; sweater</span><br><span class="line">console.log(outerWear) &#x2F;&#x2F; T-shirt</span><br></pre></td></tr></table></figure>
-
-<h2 id="Undefined-value-return-from-a-function"><a href="#Undefined-value-return-from-a-function" class="headerlink" title="Undefined value return from a function"></a>Undefined value return from a function</h2><p>如果没有return，就return undefined</p>
-<h2 id="Stand-in-line"><a href="#Stand-in-line" class="headerlink" title="Stand in line"></a>Stand in line</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function nextInLine(arr, item)&#123;</span><br><span class="line">    arr.push(item);</span><br><span class="line">    item &#x3D; arr.shift();</span><br><span class="line">    return item;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var testArr &#x3D; [1,2,3,4,5]</span><br><span class="line">console.log(&quot;Before: &quot; +JSON.stringify(testArr))</span><br><span class="line">console.log(nextInLine(testArr, 6))</span><br><span class="line">console.log(&quot;After: &quot; +JSON.stringify(testArr))</span><br></pre></td></tr></table></figure>
-
-<h2 id="Boolean-Value"><a href="#Boolean-Value" class="headerlink" title="Boolean Value"></a>Boolean Value</h2><p>true/ false</p>
-<h2 id="Equal-condition"><a href="#Equal-condition" class="headerlink" title="Equal condition"></a>Equal condition</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10 &#x3D;&#x3D; &#39;10&#39; &#x2F;&#x2F;True! Convert to string</span><br><span class="line">10 &#x3D;&#x3D;&#x3D; &#39;10&#39; &#x2F;&#x2F;False! Check type also</span><br></pre></td></tr></table></figure>
-
-<h2 id="Not-Equal"><a href="#Not-Equal" class="headerlink" title="Not Equal"></a>Not Equal</h2><p>!= </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10 !&#x3D; &#39;10&#39; ? &#x2F;&#x2F;False</span><br></pre></td></tr></table></figure>
-<h2 id="Strict-inequal-operater"><a href="#Strict-inequal-operater" class="headerlink" title="Strict inequal operater"></a>Strict inequal operater</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10 !&#x3D;&#x3D; &#39;10&#39; ? &#x2F;&#x2F;True</span><br></pre></td></tr></table></figure>
-
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/13/javascript-1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-my-first-post" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1351,7 +1370,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">/笔记/Java学习路线/</a>
+                <a href="javascript:void(0)" class="js-tag color4">/面向对象编程/学习笔记/</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1359,7 +1378,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">/面向对象编程/学习笔记/</a>
+                <a href="javascript:void(0)" class="js-tag color4">/笔记/Java学习路线/</a>
               </li>
             
             <div class="clearfix"></div>
