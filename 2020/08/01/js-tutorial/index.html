@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/7 | Zhichao&#39;s Tech Blog</title>
+  <title>JavaScript tutorial | Zhichao&#39;s Tech Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Zhichao&#39;s Tech Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/07/index.html">
+  <meta name="description" content="Manipulating HTML with JavaScript  1234567891011&lt;html&gt;    &lt;head&gt;        &lt;meta charset &#x3D; &quot;UTF-8&quot;&gt;        &lt;title&gt;title&lt;&#x2F;title&gt;    &lt;&#x2F;head&gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript tutorial">
+<meta property="og:url" content="http://yoursite.com/2020/08/01/js-tutorial/index.html">
 <meta property="og:site_name" content="Zhichao&#39;s Tech Blog">
+<meta property="og:description" content="Manipulating HTML with JavaScript  1234567891011&lt;html&gt;    &lt;head&gt;        &lt;meta charset &#x3D; &quot;UTF-8&quot;&gt;        &lt;title&gt;title&lt;&#x2F;title&gt;    &lt;&#x2F;head&gt;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-01T22:57:59.000Z">
+<meta property="article:modified_time" content="2020-09-02T23:56:25.844Z">
 <meta property="article:author" content="Zhichao(Charles) Zhang">
 <meta name="twitter:card" content="summary">
   
@@ -150,49 +154,240 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-js-tutorial" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/13/javascript-1/" class="archive-article-date">
-  	<time datetime="2020-07-13T23:32:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/13/javascript-1/">JavaScript Note</a>
+    <h1 class="article-title" itemprop="name">
+      JavaScript tutorial
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2020/08/01/js-tutorial/" class="archive-article-date">
+  	<time datetime="2020-08-01T22:57:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>Manipulating HTML with JavaScript</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset &#x3D; &quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;title&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;p id &#x3D; &quot;confirm&quot;&gt;Comfirm?&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;button id  &#x3D; &quot;button&quot;&gt;Button&lt;&#x2F;button&gt;</span><br><span class="line">        &lt;script src &#x3D; &quot;js&#x2F;youtube.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;button&quot;).onclick &#x3D; function()&#123;</span><br><span class="line">    document.getElementById(&quot;confirm&quot;).innerHTML &#x3D; &quot;Order placed&quot;</span><br><span class="line">    document.getElementById(&quot;button&quot;).style.display &#x3D; &quot;none&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果吧script换到<head>里，会报错，因为读到head里的js，找不到定义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset &#x3D; &quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;title&lt;&#x2F;title&gt;</span><br><span class="line">        &lt;script src &#x3D; &quot;js&#x2F;youtube.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;p id &#x3D; &quot;confirm&quot;&gt;Comfirm?&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;button id  &#x3D; &quot;button&quot;&gt;Button&lt;&#x2F;button&gt;</span><br><span class="line">        </span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+<p>加入异步关键词defer可以解决：等到需要再异步调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset &#x3D; &quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;title&lt;&#x2F;title&gt;</span><br><span class="line">        &lt;script defer src &#x3D; &quot;js&#x2F;youtube.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;p id &#x3D; &quot;confirm&quot;&gt;Comfirm?&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;button id  &#x3D; &quot;button&quot;&gt;Button&lt;&#x2F;button&gt;</span><br><span class="line">        </span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>async 关键词，与defer相反，是直接先发运行</p>
+<ol start="2">
+<li><p>input output comment</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var username &#x3D; prompt(); &#x2F;&#x2F;input prompt</span><br><span class="line">alert(username);</span><br><span class="line">console.log(username)&#x2F;&#x2F; not popup!</span><br><span class="line">&#x2F;*</span><br><span class="line">dfds</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>IIFE, Scope and window object<br>window (global scope)把所有全局var attach到这个object上<br>？重名很难受啊！ confict &amp; overwrite</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(function () &#123;</span><br><span class="line">    &#x2F;&#x2F;IIFE - immediately invoked function expression</span><br><span class="line">    &#x2F;&#x2F;var age &#x3D; 5;&#x2F;&#x2F;age cannot be printed! function over, age over</span><br><span class="line">    &#x2F;&#x2F; variables are protected</span><br><span class="line">    age &#x3D; 5&#x2F;&#x2F; no var: 1. age is not defined 2. go up scope and also not found 3. init a age, it becomes global</span><br><span class="line"></span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<p>var is so important.不然会把variable 变成global</p>
+</li>
+<li><p>Engine &amp; Environment<br>浏览器是environment，里面有js的engine。每个浏览器的engine对EC标准的执行效力不一样，有一个评估百分比<br>当environment换成backend，执行js的engine叫nodejs</p>
+</li>
+<li><p>Global vs Local variable </p>
+</li>
+<li><p>var</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;a is not defined here</span><br><span class="line">function blah()&#123;</span><br><span class="line">    var a &#x3D; 1 &#x2F;&#x2F;var&#39;s scope is only in function</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;a is not defined here</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li><p>global: window<br>创造了一个variable再window里，属于global</p>
+</li>
+<li><p>let &amp; const<br>inside block level variables</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function()&#123;</span><br><span class="line">    if()&#123;</span><br><span class="line">        var ... &#x2F;&#x2F; valid in function</span><br><span class="line">        let ... &#x2F;&#x2F;block  level: valid in if</span><br><span class="line">        const ... &#x2F;&#x2F; block level: valid in if and cannot be changed</span><br><span class="line">        a&#x3D; 1 &#x2F;&#x2F; global to window object</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>Block scoping</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">function()&#123;</span><br><span class="line">    if()&#123;</span><br><span class="line">        var ... &#x2F;&#x2F; valid in function</span><br><span class="line">        let ... &#x2F;&#x2F;block  level: valid in if</span><br><span class="line">        const ... &#x2F;&#x2F; block level: valid in if and cannot be changed</span><br><span class="line">        a&#x3D; 1 &#x2F;&#x2F; global to window object</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var y &#x3D; 10 &#x2F;&#x2F; Global variable</span><br><span class="line">console.log(a) &#x2F;&#x2F; a not exists</span><br><span class="line">let y &#x3D; 10 &#x2F;&#x2F; global scope: equal to var y &#x3D; 10</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F;block, its okay to just init a block</span><br><span class="line">    &#x2F;&#x2F;define everywhere</span><br><span class="line">    let y &#x3D; 10;</span><br><span class="line">    const x &#x3D; 20;</span><br><span class="line">    console.log(y,x)</span><br><span class="line">    var z &#x3D; 100;</span><br><span class="line">    &#123;</span><br><span class="line">        &#x2F;&#x2F;nest block</span><br><span class="line">        let y &#x3D; 6;</span><br><span class="line">        console.log(y) &#x2F;&#x2F; 6</span><br><span class="line">    &#125;</span><br><span class="line">    console.log(y) &#x2F;&#x2F; 10</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="7">
+<li>Primitives &amp; Objects<br>Data types:<br>两种datatypes：<br>1，primitives: string num bool null undefine symbol: immutable<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    let x &#x3D; 5； &#x2F;&#x2F; 不用声明type 如 int x &#x3D; 5</span><br><span class="line"></span><br><span class="line">    x &#x3D; &quot;hello&quot;&#x2F;&#x2F;conversion from int to string</span><br><span class="line">    b &#x3D; &quot;10&quot;</span><br><span class="line">    console.log(x + b) &#x2F;&#x2F; 510??? 认为是string</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    let tacos; &#x2F;&#x2F; undefine unsigned</span><br><span class="line">    let tacos &#x3D; null; &#x2F;&#x2F;null explictly say it is none</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+2, object: colllection of kv pair<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">let person &#x3D; &#123;</span><br><span class="line">    name: &quot;Bill&quot;, &#x2F;&#x2F;property</span><br><span class="line">    age:10,</span><br><span class="line">    favFood:&quot;,....,.&quot;,</span><br><span class="line">    fun: function()&#123; &#x2F;&#x2F; method, unique to object</span><br><span class="line">        console.log(&quot;yal)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">person.fun();</span><br><span class="line">person.age;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let now &#x3D; new Date()&#x2F;&#x2F; date object</span><br><span class="line">let grades &#x3D; [10,32,45,43] &#x2F;&#x2F; array object</span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li><p>Difference btw primitives &amp; objects</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;1. primitives are immutable</span><br><span class="line">let x &#x3D; 10;</span><br><span class="line">x &#x3D; 5; &#x2F;&#x2F;throw 10 away and asign 5</span><br><span class="line"> let myName &#x3D; &quot;Caleb&quot;</span><br><span class="line"> myName.toUpperCase()&#x2F;&#x2F;nothing done; </span><br><span class="line"> console.log(myName)&#x2F;&#x2F;Caleb</span><br><span class="line"></span><br><span class="line"> myName &#x3D;  myName.toUpperCase() &#x2F;&#x2F; asign new value</span><br><span class="line"> console.log(myName)&#x2F;&#x2F;CALEB</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Numeric datatype</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    let x &#x3D; 5;</span><br><span class="line">    x &#x3D; 5.5;&#x2F;&#x2F;only one datatype for number : number</span><br><span class="line">            &#x2F;&#x2F;no decimal, float, etc</span><br><span class="line">    </span><br><span class="line">    console.log(Number.MAX_SAFE_INTEGER) &#x2F;&#x2F;highest num </span><br><span class="line">    Number.isSafeInteger(x)</span><br><span class="line">    &#x2F;&#x2F;infinity  -Infinity   NaN (not a number)</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="10">
+<li><p>parseInt and parseFloat method<br>把string变成int/float的静态函数from Number</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let x &#x3D; 5;</span><br><span class="line">let y  &#x3D; &quot;10 is my fav num&quot; &#x2F;&#x2F; 10</span><br><span class="line"></span><br><span class="line">console.log(Number.parseInt(y) + x)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Converting Decimal numbers to Binary, Octal, Hex</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    var input &#x3D; prompt(&quot;12341212&quot;) &#x2F;&#x2F; decimal ? binary?</span><br><span class="line">    &#x2F;&#x2F;interpret it in 4 ways!</span><br><span class="line">    console.log(&quot;Decimal :&quot;, input)</span><br><span class="line">    console.log(&quot;Binary: &quot;, Number.parseInt(input, 2))&#x2F;&#x2F;base 2</span><br><span class="line">    console.log(&quot;Octal: &quot;, Number.parseInt(input, 8))&#x2F;&#x2F;base 8</span><br><span class="line">    console.log(&quot;Hex: &quot;, Number.parseInt(input, 16))&#x2F;&#x2F;base 16</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    var input &#x3D; Number(prompt(&quot;put in Decimal Number&quot;)) &#x2F;&#x2F; decimal ? binary?</span><br><span class="line">    &#x2F;&#x2F;interpret it in 4 ways!</span><br><span class="line">    console.log(&quot;Decimal :&quot;, input)</span><br><span class="line">    console.log(&quot;Decimal to Binary: &quot;, input.toString(2)&#x2F;&#x2F;base 2</span><br><span class="line">    console.log(&quot;Dec to Octal: &quot;, input.toString(2)&#x2F;&#x2F;base 8</span><br><span class="line">    console.log(&quot;Dec to Hex: &quot;, input.toString(2)&#x2F;&#x2F;base 16</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<ol start="12">
+<li>Number Instance Methods &amp; Math Object<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    let x  &#x3D; new Number(10);</span><br><span class="line">    let x &#x3D; 5.1312;</span><br><span class="line">    console.log(x.toExponential(2))</span><br><span class="line">    console.log(x.toFixed(2))</span><br><span class="line">    console.log(x.toLocalString())&#x2F;&#x2F;2,443,324</span><br><span class="line">    console.log(x.toPercision(2))</span><br><span class="line">    console.log(x.valueOf()) &#x2F;&#x2F; get primative version</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F;Math object</span><br><span class="line">    var abs &#x3D; Math.abs(-36)</span><br><span class="line">    &#x2F;&#x2F;ceil,, floor, pow, (power), round(), sign,trunc</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="13">
+<li><p>String data type</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    let myName &#x3D; &#39;df&#39;</span><br><span class="line">    console.log(&#96;my name is $&#123;myName&#125;!&#96;)&#x2F;&#x2F;variable name in string</span><br><span class="line"></span><br><span class="line">    let test &#x3D; &#39;daffsdeg eagfd hlkdfjkls  lekjln m,dsfa&quot;</span><br><span class="line">    let test &#x3D; &#39;daffsdeg \</span><br><span class="line">    eagfd hlkdfjkls  \</span><br><span class="line">    lekjln m,dsfa&quot; &#x2F;&#x2F;用\换行</span><br><span class="line"></span><br><span class="line">    console.log(test.length)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>String Method (charAt, concat, includes, indexOf, lastindexOf)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    var favFoood &#x3D; &#39;tacos&#39;</span><br><span class="line">    console.log(favFoood.charAt(2))</span><br><span class="line">    console.log(favFoood.concat(&quot;is the&quot;,&quot; worst&quot;))&#x2F;&#x2F; equal to +</span><br><span class="line"></span><br><span class="line">    let content &#x3D; &quot; this is a content &quot;</span><br><span class="line">    let search1 &#x3D; &quot;content&quot;</span><br><span class="line">    let search2 &#x3D; &quot;number&quot;</span><br><span class="line"></span><br><span class="line">    console.log(content.includes(search1))&#x2F;&#x2F;true</span><br><span class="line">    console.log(content.includes(search2, 30))&#x2F;&#x2F;from 30, false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/01/js-tutorial/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/07/13/javascript-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript Note</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -215,8 +410,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
