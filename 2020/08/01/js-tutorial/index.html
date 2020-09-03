@@ -16,7 +16,7 @@
 <meta property="og:description" content="Manipulating HTML with JavaScript  1234567891011&lt;html&gt;    &lt;head&gt;        &lt;meta charset &#x3D; &quot;UTF-8&quot;&gt;        &lt;title&gt;title&lt;&#x2F;title&gt;    &lt;&#x2F;head&gt;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-01T22:57:59.000Z">
-<meta property="article:modified_time" content="2020-09-02T23:56:25.844Z">
+<meta property="article:modified_time" content="2020-09-03T17:11:27.407Z">
 <meta property="article:author" content="Zhichao(Charles) Zhang">
 <meta name="twitter:card" content="summary">
   
@@ -257,7 +257,25 @@
 <li><p>String Method (charAt, concat, includes, indexOf, lastindexOf)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    var favFoood &#x3D; &#39;tacos&#39;</span><br><span class="line">    console.log(favFoood.charAt(2))</span><br><span class="line">    console.log(favFoood.concat(&quot;is the&quot;,&quot; worst&quot;))&#x2F;&#x2F; equal to +</span><br><span class="line"></span><br><span class="line">    let content &#x3D; &quot; this is a content &quot;</span><br><span class="line">    let search1 &#x3D; &quot;content&quot;</span><br><span class="line">    let search2 &#x3D; &quot;number&quot;</span><br><span class="line"></span><br><span class="line">    console.log(content.includes(search1))&#x2F;&#x2F;true</span><br><span class="line">    console.log(content.includes(search2, 30))&#x2F;&#x2F;from 30, false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li></li>
+<li><p>More string methods<br>{<br>//substring<br>console.log(content.substring(6,11)) //find 6 - 11, 11 not included</p>
+<p>console.log(content.substr(6, 5))// from index 6 to another 5 , include 6</p>
+<p>console.log(content.slice(6,11));//same with substring</p>
+<p>console.log(content.trim())// remove all the extra space, trimLeft, trimRight, trimStart,etc</p>
+<p>let waiting = “tick tock”<br>console.log(waiting.repeat(400))</p>
+<p>//split<br>console.log(waiting.split(“ “)) // to array<br>}</p>
+</li>
+<li><p>Functions and Objects</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F;create an object</span><br><span class="line"></span><br><span class="line">    let position &#x3D; &#123;</span><br><span class="line">        x:10,</span><br><span class="line">        y:20,</span><br><span class="line">        print:function()&#123;</span><br><span class="line">            console.log(&#96;X:$&#123;this.x&#125;, Y:$&#123;this.y&#125;&#96;)</span><br><span class="line">        &#125;   &#x2F;&#x2F; this refer this object position,</span><br><span class="line">        myNestedObject:&#123;</span><br><span class="line">            attr: 1</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    let myPosition &#x3D; position;&#x2F;&#x2F; soft copy</span><br><span class="line"></span><br><span class="line">     function print()&#123;</span><br><span class="line">            console.log(this); &#x2F;&#x2F;window</span><br><span class="line">            console.log(&#96;X:$&#123;this.x&#125;, Y:$&#123;this.y&#125;&#96;)&#x2F;&#x2F;undefine: this</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>Single line if statement</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   if (name &#x3D;&#x3D;&#x3D; &quot;Claire&quot;) console.log(&quot;HEllo)&quot; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="18">
+<li>Ternary operater<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    let name &#x3D; prompt(&quot;Whats my name&quot;)</span><br><span class="line">   let points &#x3D; name &#x3D;&#x3D;&#x3D; &quot;Charles&quot; ? 10 : 0;</span><br><span class="line">   console.log(points)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>Array</p>
+</li>
 </ol>
 
       
@@ -351,6 +369,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/08/03/html5-tutorial/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          html5_tutorial
+        
+      </div>
+    </a>
   
   
     <a href="/2020/07/13/javascript-1/" id="article-nav-older" class="article-nav-link-wrap">

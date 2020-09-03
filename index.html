@@ -152,6 +152,185 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-html5-tutorial" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/03/html5-tutorial/">html5_tutorial</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/03/html5-tutorial/" class="archive-article-date">
+  	<time datetime="2020-08-03T17:11:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>Create the first html</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; &#x2F;&#x2F; The type of this doc is html</span><br><span class="line">&lt;html&gt;&#x2F;&#x2F;Container tag 有头有尾 overall container tag</span><br><span class="line">       &lt;head&gt;&#x2F;&#x2F;data about doc, title, import resource, setting</span><br><span class="line">        </span><br><span class="line">    &lt;&#x2F;head&gt; </span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;&#x2F;&#x2F;child of &lt;html&gt;, sibling of &lt;head&gt;</span><br><span class="line">&lt;&#x2F;html&gt;&#x2F;&#x2F;ending tag</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>Basic tag</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;h1&gt;This is heading tag, and 1 is size&lt;&#x2F;h1&gt;</span><br><span class="line">        &lt;br&#x2F;&gt;&lt;p&gt;This is a break tag&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;hr&#x2F;&gt;&lt;p&gt;this is horizontal rule&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;p&gt;This is my paragraph (automatic formating!)&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;p&gt;&lt;b&gt;This is bold tag&lt;&#x2F;b&gt;, &lt;i&gt;This is italic&lt;&#x2F;i&gt;&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;p&gt;&lt;b&gt;&lt;i&gt;This is both&lt;&#x2F;i&gt;&lt;&#x2F;b&gt;&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;p&gt;&lt;big&gt;Big tag: makes this &lt;big&gt; bigger&lt;&#x2F;big&gt;&lt;&#x2F;big&gt;&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;p&gt;H&lt;sub&gt;2&lt;&#x2F;sub&gt;O subscript&lt;&#x2F;p&gt;</span><br><span class="line">        &lt;p&gt;10&lt;sup&gt;2&lt;&#x2F;sup&gt; Superscript&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>Comments<br>只注释代码无法解释的地方，不要每个细节都写注释，let html speak them self</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;h2&gt;Comments are&lt;&#x2F;h2&gt;</span><br><span class="line">        &lt;!-- this is a comment</span><br><span class="line">        also this line TODO--&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Style and color<br>详见 css tutorial in this blog</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body style &#x3D; &quot;background-color: lightblue&quot;&gt;</span><br><span class="line">        &lt;h2 style &#x3D; &quot;color: green;&quot;&gt;Style and Colors&lt;&#x2F;h2&gt;</span><br><span class="line">        &lt;p style &#x3D; &quot;color: red; background-color: aqua;&quot;&gt;You can style your HTML and Makeit look prettier&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Formatting a page<br>用tag来format header, main, footer<br>介绍了<nav>. <article>. <section> <aside><br>tag好处：1. 容易懂，2，search engine</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;    </span><br><span class="line">        &lt;header&gt;</span><br><span class="line">            &lt;nav&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            &lt;&#x2F;nav&gt;</span><br><span class="line">        &lt;&#x2F;header&gt;</span><br><span class="line">        &lt;main&gt;</span><br><span class="line">            &lt;article&gt;</span><br><span class="line">                &lt;section&gt;</span><br><span class="line">                    &lt;h3&gt;This is header&lt;&#x2F;h3&gt;</span><br><span class="line">                    &lt;aside&gt;This is ads&lt;&#x2F;aside&gt;</span><br><span class="line">                &lt;&#x2F;section&gt;</span><br><span class="line">                &lt;section&gt;</span><br><span class="line">                    </span><br><span class="line">                &lt;&#x2F;section&gt;</span><br><span class="line">            &lt;&#x2F;article&gt;</span><br><span class="line">        &lt;&#x2F;main&gt;</span><br><span class="line">        &lt;footer&gt;</span><br><span class="line">            This is footer</span><br><span class="line">        &lt;&#x2F;footer&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Links<br><a href>可以连接到other html，或网页, target = “_blank”在新页面打开</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;    </span><br><span class="line">        &lt;a href &#x3D; &quot;https:&#x2F;&#x2F;www.google.com&quot;&gt;&lt;h1&gt;Text for this link&lt;&#x2F;h1&gt;&lt;&#x2F;a&gt;</span><br><span class="line">        &lt;a href &#x3D; &quot;https:&#x2F;&#x2F;www.google.com&quot; target &#x3D; &quot;_blank&quot;&gt;&lt;h1&gt;New tab for this link&lt;&#x2F;h1&gt;&lt;&#x2F;a&gt;</span><br><span class="line">        &lt;a href &#x3D; &quot;page2.html&quot;&gt;&lt;h1&gt;Text for this link&lt;&#x2F;h1&gt;&lt;&#x2F;a&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>image<br>放入本地图片，网上图片的方法。alt来防止图片load不出来。<br>用link可以把图片当成clickable 的图案<br>调整大小的方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;    </span><br><span class="line">        &lt;img src &#x3D; &quot;https:&#x2F;&#x2F;ichef.bbci.co.uk&#x2F;news&#x2F;936&#x2F;cpsprodpb&#x2F;5EAF&#x2F;production&#x2F;_99793242_dino1.jpg&quot; alt &#x3D;&quot;A really scary Dino&quot; width&#x3D; &quot;100&quot; height&#x3D;&quot;100&quot;&gt;</span><br><span class="line">         &lt;img src &#x3D; &quot;cat.jpg&quot; alt&#x3D;&quot;a cute cat&quot;&gt;</span><br><span class="line">         &lt;!-- Image as link--&gt;</span><br><span class="line">         &lt;a href &#x3D;&quot;https:&#x2F;&#x2F;www.google.com&quot;&gt;</span><br><span class="line">            &lt;img src &#x3D; &quot;https:&#x2F;&#x2F;ichef.bbci.co.uk&#x2F;news&#x2F;936&#x2F;cpsprodpb&#x2F;5EAF&#x2F;production&#x2F;_99793242_dino1.jpg&quot; alt &#x3D;&quot;A really scary Dino&quot; width&#x3D; &quot;100&quot; height&#x3D;&quot;100&quot;&gt;</span><br><span class="line">        &lt;&#x2F;a&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Video<br>用tag <video>来导入本地video：控制control，autoplay，poster（首页图片），loop<br>用iframe（share from youtube embed）导入youtube video</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;    </span><br><span class="line">        &lt;video src &#x3D; &quot;video.mp4&quot; poster &#x3D; &quot;image.png&quot; autoplay loop controls width&#x3D;&quot;400&quot;&gt;Display if video fail&lt;&#x2F;video&gt;</span><br><span class="line"></span><br><span class="line">        &lt;iframe width&#x3D;&quot;560&quot; height&#x3D;&quot;315&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;pQN-pnXPaVg&quot; frameborder&#x3D;&quot;0&quot; allow&#x3D;&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;</span><br><span class="line">        </span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Lists</p>
+</li>
+</ol>
+<p>介绍order list， unordered list， description list， list item<br>可以互相嵌入</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "description" content="This is an awesome web">
+        <title>Charles's website</title>
+
+<pre><code>&lt;/head&gt;
+
+&lt;body&gt;    
+    &lt;!-- unordered list--&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href = &quot;https://www.google.com&quot;&gt;Apples&lt;/li&gt;&lt;!-- list item--&gt;&lt;/a&gt;
+        &lt;li&gt;orange&lt;/li&gt;
+        &lt;li&gt;banana&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!--ordered list--&gt;
+    &lt;ol type=&quot;A&quot;&gt;
+        &lt;li&gt;&lt;a href = &quot;https://www.google.com&quot;&gt;Apples&lt;/li&gt;&lt;!-- list item--&gt;&lt;/a&gt;
+        &lt;li&gt;orange
+            &lt;ol&gt;
+                &lt;li&gt;item1&lt;/li&gt;
+                &lt;li&gt;item2&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;banana&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;!-- description list--&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;&lt;!-- description term--&gt;
+            Apple
+        &lt;/dt&gt;
+        &lt;dd&gt;- there are red&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/body&gt;</code></pre></html>
+
+<ol start="10">
+<li><p>Table<br>th, td, tr, tbody, thead, caption</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;    </span><br><span class="line">        &lt;table&gt;</span><br><span class="line">            &lt;thead&gt;</span><br><span class="line">                &lt;!-- table head--&gt;</span><br><span class="line">            &lt;caption&gt;This is title&lt;&#x2F;caption&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;!--table header--&gt;</span><br><span class="line">                &lt;th&gt;num1&lt;&#x2F;th&gt;</span><br><span class="line">                &lt;th&gt;num2&lt;&#x2F;th&gt;</span><br><span class="line">                &lt;th&gt;num3&lt;&#x2F;th&gt;</span><br><span class="line">            &lt;&#x2F;tr&gt;</span><br><span class="line">        &lt;&#x2F;thead&gt;</span><br><span class="line">        &lt;tbody&gt;</span><br><span class="line">            &lt;!--table body--&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;!-- table row--&gt;</span><br><span class="line">                &lt;td colspan &#x3D; &quot;2&quot;&gt;one&lt;&#x2F;td&gt;</span><br><span class="line">                &lt;td&gt;one&lt;&#x2F;td&gt;</span><br><span class="line">                &lt;td&gt;one&lt;&#x2F;td&gt;</span><br><span class="line">                &lt;!-- table data--&gt;</span><br><span class="line">            &lt;&#x2F;tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td colspan &#x3D; &quot;2&quot;&gt;one&lt;&#x2F;td&gt;</span><br><span class="line">                &lt;td&gt;one&lt;&#x2F;td&gt;</span><br><span class="line">                &lt;td&gt;one&lt;&#x2F;td&gt;</span><br><span class="line">            &lt;&#x2F;tr&gt;</span><br><span class="line">        &lt;&#x2F;tbody&gt;</span><br><span class="line">        &lt;&#x2F;table&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>div and spans<br>作用：方便css styling wrapper<br>区别：inline vs block 详见注释</p>
+</li>
+</ol>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "description" content="This is an awesome web">
+        <title>Charles's website</title>
+
+<pre><code>&lt;/head&gt;
+
+&lt;body&gt;    
+    &lt;!-- two main ways to display: block &amp; inline--&gt;
+    &lt;!--block: take up entire width of page--&gt;
+    &lt;!--inline: only take up width it needs--&gt;
+    &lt;!-- &lt;p&gt; is a block,&lt;a&gt; is inline--&gt;
+
+    &lt;a href=&quot;#&quot;&gt;Link1&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;Link1&lt;/a&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Paragraph1&lt;/p&gt;
+    &lt;p&gt;Paragraph2&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;!--span: inline; div: block--&gt;
+    &lt;span&gt;span1&lt;/span&gt;
+    &lt;span&gt;span2&lt;/span&gt;
+    &lt;hr&gt;
+    &lt;div&gt;div1&lt;/div&gt;
+    &lt;div&gt;div2&lt;/div&gt;
+&lt;/body&gt;</code></pre></html>
+
+<ol start="12">
+<li><p>input &amp; forms<br>介绍各种input type</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;    </span><br><span class="line">        &lt;input type&#x3D;&quot;text&quot; value &#x3D;&quot;Enter your username&quot;&#x2F;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;password&quot; &#x2F;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;date&quot; &#x2F;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;emial&quot; &#x2F;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;range&quot; &#x2F;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;file&quot; &#x2F;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;checkbox&quot; &#x2F;&gt;</span><br><span class="line">        &lt;input name &#x3D; &quot;btn&quot; type&#x3D;&quot;radio&quot; &#x2F;&gt;</span><br><span class="line">        &lt;input name &#x3D; &quot;btn&quot; type&#x3D;&quot;radio&quot; &#x2F;&gt;</span><br><span class="line">        &lt;input  type&#x3D;&quot;submit&quot; &#x2F;&gt;</span><br><span class="line">            &lt;!--big area--&gt;</span><br><span class="line">        &lt;textarea rows&#x3D;&quot;10&quot; cols&#x3D;&quot;3&quot;&gt;</span><br><span class="line">            Enter a paragraph</span><br><span class="line">        &lt;&#x2F;textarea&gt;</span><br><span class="line"></span><br><span class="line">        &lt;hr&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--Form--&gt;</span><br><span class="line">        &lt;form&gt;</span><br><span class="line">            &lt;input type&#x3D;&quot;submit&quot;&gt;</span><br><span class="line">            &lt;input name &#x3D; &quot;btn&quot; type&#x3D;&quot;radio&quot; &#x2F;&gt;</span><br><span class="line">        &lt;&#x2F;form&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>iframe<br>把其他网页嵌入到这个网页 pretty cool很多网站不愿意被iframe引用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;    </span><br><span class="line">        &lt;iframe src &#x3D; &quot;https:&#x2F;&#x2F;zhichao-zhang.github.io&#x2F;&quot;&gt;</span><br><span class="line">            This is google</span><br><span class="line">        &lt;&#x2F;iframe&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>meta tag<br>可以附加meta信息标签，如作者，keyword 。。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;description&quot; content&#x3D;&quot;This is an awesome web&quot;&gt;</span><br><span class="line">        &lt;meta name &#x3D; &quot;author&quot; content&#x3D;&quot;Zhichao zhang&quot;&gt;</span><br><span class="line">        &lt;meta name&#x3D;&quot;keywords&quot; content&#x3D;&quot;HTML, tutorial&quot;&gt;</span><br><span class="line">        &lt;meta name&#x3D; &quot;viewport&quot; content&#x3D;&quot;width &#x3D; device-width, initial-scale &#x3D; 1.0&quot;&gt;</span><br><span class="line">        &lt;title&gt;Charles&#39;s website&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;    </span><br><span class="line">        &lt;h1&gt;meta tage&lt;&#x2F;h1&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/03/html5-tutorial/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-js-tutorial" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -255,7 +434,25 @@
 <li><p>String Method (charAt, concat, includes, indexOf, lastindexOf)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    var favFoood &#x3D; &#39;tacos&#39;</span><br><span class="line">    console.log(favFoood.charAt(2))</span><br><span class="line">    console.log(favFoood.concat(&quot;is the&quot;,&quot; worst&quot;))&#x2F;&#x2F; equal to +</span><br><span class="line"></span><br><span class="line">    let content &#x3D; &quot; this is a content &quot;</span><br><span class="line">    let search1 &#x3D; &quot;content&quot;</span><br><span class="line">    let search2 &#x3D; &quot;number&quot;</span><br><span class="line"></span><br><span class="line">    console.log(content.includes(search1))&#x2F;&#x2F;true</span><br><span class="line">    console.log(content.includes(search2, 30))&#x2F;&#x2F;from 30, false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li></li>
+<li><p>More string methods<br>{<br>//substring<br>console.log(content.substring(6,11)) //find 6 - 11, 11 not included</p>
+<p>console.log(content.substr(6, 5))// from index 6 to another 5 , include 6</p>
+<p>console.log(content.slice(6,11));//same with substring</p>
+<p>console.log(content.trim())// remove all the extra space, trimLeft, trimRight, trimStart,etc</p>
+<p>let waiting = “tick tock”<br>console.log(waiting.repeat(400))</p>
+<p>//split<br>console.log(waiting.split(“ “)) // to array<br>}</p>
+</li>
+<li><p>Functions and Objects</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F;create an object</span><br><span class="line"></span><br><span class="line">    let position &#x3D; &#123;</span><br><span class="line">        x:10,</span><br><span class="line">        y:20,</span><br><span class="line">        print:function()&#123;</span><br><span class="line">            console.log(&#96;X:$&#123;this.x&#125;, Y:$&#123;this.y&#125;&#96;)</span><br><span class="line">        &#125;   &#x2F;&#x2F; this refer this object position,</span><br><span class="line">        myNestedObject:&#123;</span><br><span class="line">            attr: 1</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    let myPosition &#x3D; position;&#x2F;&#x2F; soft copy</span><br><span class="line"></span><br><span class="line">     function print()&#123;</span><br><span class="line">            console.log(this); &#x2F;&#x2F;window</span><br><span class="line">            console.log(&#96;X:$&#123;this.x&#125;, Y:$&#123;this.y&#125;&#96;)&#x2F;&#x2F;undefine: this</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>Single line if statement</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   if (name &#x3D;&#x3D;&#x3D; &quot;Claire&quot;) console.log(&quot;HEllo)&quot; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="18">
+<li>Ternary operater<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    let name &#x3D; prompt(&quot;Whats my name&quot;)</span><br><span class="line">   let points &#x3D; name &#x3D;&#x3D;&#x3D; &quot;Charles&quot; ? 10 : 0;</span><br><span class="line">   console.log(points)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>Array</p>
+</li>
 </ol>
 
       
